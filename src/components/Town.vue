@@ -1,23 +1,29 @@
 <template>
   <div class="virtual-town">
-    <div class="text"><h2>Cidade virtual da Sylvanian Families</h2>
-    <h3>
-        Faça sua escolha!
-    </h3></div>
-    
+    <div class="text">
+      <h2>Cidade virtual da Sylvanian Families</h2>
+      <h3>Faça sua escolha!</h3>
+    </div>
+
     <div class="characters">
-      <div
-        v-for="(character, index) in characters"
-        :key="index"
-        class="character"
-        @click="showMessage(character)"
-      >
+      <div class="character">
         <img
-          :src="character.image"
-          :alt="character.name"
+          src="/images/微信图片_20241025212532.jpg"
+          class="character-image"
+          @click="showMessage('111')"
+        />
+      </div>
+      <div class="character">
+        <img
+          src="/images/微信图片_20241025212559.jpg"
           class="character-image"
         />
-       
+      </div>
+      <div class="character">
+        <img
+          src="/images/微信图片_20241025212603.jpg"
+          class="character-image"
+        />
       </div>
     </div>
     <div v-if="message" class="modal">
@@ -34,18 +40,16 @@ import { ref } from "vue";
 
 const characters = [
   {
-    
     message: "Você tem o direito de sentir todas as emoções",
     image: "/images/微信图片_20241025212532.jpg",
   },
   {
-    
     message: "Você deve ser feliz todos os dias.",
     image: "/images/微信图片_20241025212559.jpg",
   },
   {
-   
-    message: "Quem disse que seus olhos são bonitos nunca deve ter visto seus olhos！",
+    message:
+      "Quem disse que seus olhos são bonitos nunca deve ter visto seus olhos！",
     image: "/images/微信图片_20241025212603.jpg",
   },
 ];
@@ -53,7 +57,7 @@ const characters = [
 const message = ref("");
 
 function showMessage(character) {
-  message.value = character.message;
+  message.value = character
 }
 
 function closeMessage() {
@@ -62,7 +66,6 @@ function closeMessage() {
 </script>
 
 <style scoped>
-
 .virtual-town {
   background-size: cover;
   padding: 20px;
@@ -108,12 +111,10 @@ function closeMessage() {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 .close {
   cursor: pointer;
   margin-right: 180px;
-  
 }
 p,
 span {
