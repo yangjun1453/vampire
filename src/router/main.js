@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import Page1 from "../pages/page1.vue";
 import Page2 from "../pages/page2.vue";
 import Page3 from "../pages/page3.vue";
@@ -6,7 +6,7 @@ import Page4 from "../pages/page4.vue";
 
 const router = createRouter({
 
-    history:createWebHistory(),
+  history:createWebHashHistory(),
     routes:[{path:'/page1',component:Page1
         
     },{
