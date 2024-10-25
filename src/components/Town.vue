@@ -10,19 +10,22 @@
         <img
           src="/images/微信图片_20241025212532.jpg"
           class="character-image"
-          @click="showMessage('111')"
+          @click="showMessage('Você tem o direito de sentir todas as emoções')"
         />
       </div>
       <div class="character">
         <img
           src="/images/微信图片_20241025212559.jpg"
           class="character-image"
+           @click="showMessage('Você deve ser feliz todos os dias.')"
         />
       </div>
       <div class="character">
         <img
           src="/images/微信图片_20241025212603.jpg"
           class="character-image"
+          @click="showMessage('Quem disse que seus olhos são bonitos nunca deve ter visto seus olhos！')"
+
         />
       </div>
     </div>
