@@ -2,7 +2,7 @@
 <div class="box1">
     <div class="text" >
       
-        <h2 class="encouragement">{{ encouragementMessage }}</h2>
+       <p>{{ encouragementMessage }}</p>
     </div>
 </div>
 </template>
