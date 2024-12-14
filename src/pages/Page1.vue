@@ -10,7 +10,7 @@
 <script setup name="Page1" >
 import { ref } from 'vue';
 const encouragementMessages = [
-  '未完待续....我不知道小屋的主人是否会回来 '
+  '未完待续....我不知道小屋的主人是否会回来，但是如果她回来，我会看开心的:) '
 ];
 
 const randomIndex = Math.floor(Math.random() * encouragementMessages.length);
